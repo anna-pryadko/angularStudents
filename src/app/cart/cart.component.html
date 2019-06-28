@@ -1,0 +1,24 @@
+<h2>My Cart</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of cartproducts let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <button type="button" class="btn btn-primary" (click)="deleteProductCart()">Del</button>
+      </tr>
+      <tr>
+          <th scope="row"></th>
+          <td>Total sum:</td>
+          <td>{{totalSum}}</td>
+      </tr>
+    </tbody>
+  </table> 

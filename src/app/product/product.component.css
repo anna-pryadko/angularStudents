@@ -1,0 +1,67 @@
+.card
+{
+    margin: 5px;
+    border-radius: 5px;
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    /* height: 100%; */
+   
+}
+
+.butt {
+  width: 20px;
+  height: 10px;;
+}
+
+.ic {
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  z-index: 10;
+  margin: 5px;
+
+}
+
+.fas {
+  color: yellow;
+}
+/* 
+.fav {
+  background-color: yellow;
+  background:transparent;
+}
+
+.noFav {
+  background:transparent;
+} */
+
+/* .containerCard {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+
+  .card,
+  .sale {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .sale {
+    z-index: 10;
+  } */
+  
+  .red  {
+        /* background-image: url('https://chto-eto-takoe.ru/uryaimg/f2cd171bd42220283b7a595c3ff2aaaf.jpg'); */
+        background-repeat: no-repeat;
+        background-position: -15px;
+        background-position-y: 110px;
+        border: 3px solid red;
+    }
+    
+  

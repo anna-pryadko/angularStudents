@@ -1,0 +1,22 @@
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mail</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of userArr let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.mail}}</td>
+            <button type="button" class="btn btn-primary">Delete</button>
+          </tr>
+         
+        </tbody>
+      </table> 
+     
+      

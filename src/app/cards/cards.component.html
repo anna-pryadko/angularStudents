@@ -1,0 +1,33 @@
+
+<div class="container">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Mail</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.mail}}</td>
+    </tr>
+   
+  </tbody>
+</table> 
+
+<!-- <div class="row">
+<div *ngFor="let user of users let i = index">
+
+<app-card [data]="user"></app-card>
+
+</div>
+</div> -->
+
+<app-form></app-form>
+
+</div> 

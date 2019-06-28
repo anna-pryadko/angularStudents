@@ -1,0 +1,26 @@
+
+<!-- <div class=ic>
+    <button type="button" checkOn=0 [ngClass]="checkOn ===1 ? 'butt btn-danger':'butt btn-primary'" (click)="changeFavourite(data.index)"></button>
+    <i checkOn=0 [ngClass]="checkOn ===1 ? 'fas fa-star':'far fa-star'" (click)="changeFavourite(data.index)"></i>      
+</div> -->
+      <div class="card" style="width: 18rem;" [ngClass]="data.new_price < 20 ? 'red':'card'">   
+      <div class=ic>
+        <i checkOn=0 [ngClass]="checkOn ===1 ? 'fas fa-star':'far fa-star'" (click)="changeFavourite(data.index)"></i>  
+      </div>
+        <img src="http://mystor.co.il/php/{{data.image}}" class="card-img-top"/>  
+        <!-- <i checkOn=0 [ngClass]="checkOn ===1 ? 'fas fa-star':'far fa-star'" (click)="setFavorite(data.index)"></i>   -->
+      <div class="card-body" (click)="goToProduct(data.index)">
+        <h5 class="card-title">{{data.name}}</h5>
+        <p class="card-text">Price: {{data.new_price}} ₪</p>
+        <div class="row">
+        <div class="col-4 offset-2">
+        <button type="button" class="btn btn-primary" (click)="addProduct()">Add</button>
+      </div>
+      <div class="col-4 offset-2">
+        <button type="button" class="btn btn-danger" (click)="deleteProduct()">Delete</button>
+      </div>
+      </div>
+      </div>
+    </div>
+    
+  

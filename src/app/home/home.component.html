@@ -1,0 +1,22 @@
+
+<div class="container">
+<div class="row">
+  <!-- <div class="col-8">
+    <app-table [userArr]="users"></app-table>
+  </div> -->
+
+  <div class="col-9">
+      <div class="row">
+        <div *ngFor="let item of allStudentsHome let i = index">
+        <app-card [data]="item" [i]="i" (deleteUserComponent)="deleteUser($event)"></app-card>
+       </div>
+    </div>
+  </div>
+
+  <div class="col-3">
+    <app-form></app-form>
+  </div>
+</div> 
+
+</div>
+

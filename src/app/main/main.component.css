@@ -1,0 +1,24 @@
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.btn{
+    margin: 10px;
+    width: 130px;
+}
+
+.col-4{
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 30px;
+}
