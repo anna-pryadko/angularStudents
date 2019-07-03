@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../service/api.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-form',
@@ -14,13 +15,17 @@ user={
   mail:"",
   age:""
 }
+
+//public allStudentForm=new BehaviorSubject<object>({});
+
   constructor(public api:ApiService) { }
 
   ngOnInit() {
 console.log(this.user.name,this.user.mail)
 
   }
-onSubmit() {
-   this.api.addStudent(this.user);
+async onSubmit() {
+  await this.api.addStudent(this.user);
+  
  }
 }

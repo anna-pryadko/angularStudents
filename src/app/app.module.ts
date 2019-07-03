@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 // import {MatIconModule} from '@angular/material/icon';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+//import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { MainComponent } from './main/main.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import {HttpClientModule} from '@angular/common/http';
-import { NgxSpinnerModule } from 'ngx-spinner';
+//import { NgxSpinnerModule } from 'ngx-spinner';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 //import { AboutComponent } from './about/about.component';
@@ -47,10 +47,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxSpinnerModule,
-    RouterModule.forRoot(appRouter),
+    // NgxSpinnerModule,
+   // RouterModule.forRoot(appRouter),
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot(),
+    //MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

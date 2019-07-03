@@ -1,7 +1,7 @@
 import { NgModule, Pipe, Directive, Component ,OnInit } from '@angular/core';
 import { SettingsService } from '../service/settings.service';
 import { ApiService } from '../service/api.service';
-import { NgxSpinnerService } from 'ngx-spinner';
+//import { NgxSpinnerService } from 'ngx-spinner';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
@@ -32,9 +32,9 @@ export class MainComponent implements OnInit {
   
   public productsByCategory:Array<Object> = [];
   
-  constructor(public goFav:Router, public setServ:SettingsService, public api:ApiService, private spinner: NgxSpinnerService) {
+  constructor(public goFav:Router, public setServ:SettingsService, public api:ApiService) {
     // console.log(setServ.sum(10,7));
-    this.spinner.show();
+    // this.spinner.show();
     this.getProductsAsync();
    
   }
@@ -43,7 +43,7 @@ export class MainComponent implements OnInit {
   {
     //this.mainProducts=await this.api.getProducts();
     this.mainProducts.splice(0,100);
-    this.spinner.hide();
+    // this.spinner.hide();
     console.log("products",this.mainProducts);
   }
 
